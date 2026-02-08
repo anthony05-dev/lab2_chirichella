@@ -1,6 +1,6 @@
 package monsters;
 
-public class Monster {
+public abstract class Monster {
 
     public String getName() {
         return name;
@@ -10,9 +10,10 @@ public class Monster {
         this.name = name;
     }
 
-    public Monster(String name, Species species) {
+    public Monster(String name, Species species, Behavior behavior) {
         this.name = name;
         this.species = species;
+        this.behavior = behavior;
     }
 
     private String name;
@@ -27,4 +28,15 @@ public class Monster {
 
     private Species species;
 
+    public Behavior getBehavior() {
+        return behavior;
+    }
+
+    public void setBehavior(Behavior behavior) {
+        this.behavior = behavior;
+    }
+
+    private Behavior behavior;
+
+    public abstract void specialPowers();
 }
