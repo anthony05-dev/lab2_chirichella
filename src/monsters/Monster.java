@@ -6,6 +6,8 @@ public abstract class Monster {
         return name;
     }
 
+    private String specialPower;
+
     public void setName(String name) {
         this.name = name;
     }
@@ -39,4 +41,13 @@ public abstract class Monster {
     private Behavior behavior;
 
     public abstract void specialPowers();
+
+    protected void setSpecialPower(String specialPower) {
+        this.specialPower = specialPower;
+    }
+
+    public String getSpecialPower() {
+        return specialPower;
+    }
+
 }
