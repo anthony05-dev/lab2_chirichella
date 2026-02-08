@@ -8,6 +8,6 @@ public class Undead extends Monster{
 
     @Override
     public void specialPowers(){
-        System.out.println(" ");
+        System.out.println("Panzer Spawn");
     }
 }

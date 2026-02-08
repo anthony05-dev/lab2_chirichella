@@ -10,7 +10,7 @@ public class Water extends Monster{
 
     @Override
     public void specialPowers(){
-        System.out.println(" ");
+        System.out.println("Hidden Mist Jutsu");
     }
 }
 

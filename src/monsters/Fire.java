@@ -8,6 +8,6 @@ public class Fire extends Monster{
 
     @Override
     public void specialPowers(){
-        System.out.println(" ");
+        System.out.println("FireBall Jutsu");
     }
 }
